@@ -24,6 +24,15 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
+    animation: zoom 100s 
+}
+@keyframes zoom{
+  0%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .img-eu{
@@ -38,6 +47,7 @@ header{
     position: absolute;
     top: 30%;
     left: 8%;
+    animation: moverBanner 3s;
 }
 
 .banner h1{
@@ -74,5 +84,14 @@ header{
   transform:scale(1.04);
   transition: 0.45s;
   cursor: pointer;
+}
+
+@keyframes moverBanner{
+  0%{
+    transform: translateY(30rem)
+  }
+  100%{
+    transform: scale(1rem);
+  }
 }
 
