@@ -11,8 +11,16 @@ body{
 header{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .img-wrapper{
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.898);
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
 }
