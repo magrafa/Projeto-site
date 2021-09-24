@@ -4,6 +4,8 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 body{
     font-size: 16px;
@@ -13,6 +15,35 @@ header{
     height: 100vh;
     overflow: hidden;
     position: relative;
+}
+.hamburguer span{
+  position: absolute;
+  left: 3rem;
+  height: 2rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(23, 18, 111, 0.836);
+  color: #ffffff;
+  font-family: "Josefin Sans",serif;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: all 0.3s;
+
+}
+.hamburguer span::before{
+  content: "";
+  position: absolute;
+  border-right: .5rem solid rgba(23, 18, 111, 0.836);
+  border-top: .5rem solid transparent;
+  border-left: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+  left: -1rem
+
+}
+.show-menu .hamburguer:hover span{
+  opacity: 1;
 }
 .hamburguer{
   /* background-color: rgb(155, 0, 0); */
@@ -25,14 +56,31 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  cursor: pointer;
+}
+.hamburguer:active{
+  transform: scale(1.09);
+
 }
 .line{
-  width: 100%;
+  width: 30px;
   background-color: rgb(255, 255, 255);
   height: 0.01rem;
   box-shadow: 0.1rem 0.1rem 1px #000000ef;
+  transition: transform 1.09s;
+}
+.show-menu #line:nth-child(1){
+  transform: rotate(43deg) translate(.482rem, .45rem);
 
 }
+.show-menu #line:nth-child(3){
+ transform: rotate(-45deg) translate(.325rem, -.45rem);
+}
+.show-menu #line:nth-child(2){
+  opacity: 0;
+  visibility: hidden;
+}
+
 .img-wrapper{
     width: 100%;
     height: 100%;
@@ -139,3 +187,73 @@ header{
   }
 }
 
+.sidebar{
+  width: 20rem;
+  height: 100vh;
+  background-color: #ffffff;
+  position:fixed;
+  top: 0;
+  right:-20rem;
+  transition: all 0.6s;
+}
+.show-menu .sidebar{
+  right: 0;
+  
+}
+
+.show-menu .hamburguer{
+  right: 16rem;
+}
+
+.menu{
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.menu-item{
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.menu-link{
+  font-family: "Josefin Sans",serif;
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+.menu-link:hover{
+  color: rgba(23, 18, 111, 0.836);
+  text-shadow: 0.11rem 0.11rem 1px rgb(0 0 0 / 72%);
+  transition: all 0.2s;
+} 
+/* .menu-link-word:hover{
+  
+}  */
+
+.social-media{
+  position:absolute;
+  bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.social-media i{
+  color: #1a1a1a;
+  width: 1.5rem;
+  height: 2.5rem;
+  display: flex;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media i:hover{
+  color: #0000ff;
+  transition: all ;
+  transition: 0.4s;
+  /* transition: ease-out ;
+  transition: 0.4s; */
+  transform: translateY(-3%);
+}
