@@ -37,6 +37,7 @@ header{
 
 .img-eu{
   padding-right: 85%;
+  width: 10rem;
 }
 .img-eu img{
   width: 100%;
@@ -47,7 +48,8 @@ header{
     position: absolute;
     top: 30%;
     left: 8%;
-    animation: moverBanner 3s;
+    right: 8%
+    /* animation: mover 2s; */
 }
 
 .banner h1{
@@ -57,7 +59,8 @@ header{
     font-weight: 600;
     text-shadow: .2rem .2rem 2px rgba(0, 0, 0, 0.72);
     line-height: 3.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    animation: mover 1.5s;
 }
 .banner p{
     color: #ffffff;
@@ -66,32 +69,54 @@ header{
     font-weight: 400;
     text-shadow: .2rem .2rem 2px rgba(0, 0, 0, 0.72);
     line-height: 3.5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
+    animation: mover 1.8s;
 }
+.banner-img{
+  animation: sumir 1.5s ;
+}
+
 .banner button{
   font-family: "Josefin Sans",serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgb(23, 18, 111) 0%, rgb(7, 108, 128) 100%);  
   padding: 1rem 2rem;
   border-radius: 4px;
   border-style: none;
+  animation: mover 2.1s;
 }
 .banner button:hover{
-  transform:scale(1.04);
-  transition: 0.45s;
+  transform:scale(1.09);
+  transition: 0.65s;
   cursor: pointer;
 }
+.banner button:active{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(23, 18, 111, 0.836) 0%, rgba(7, 108, 128, 0.664) 100%);  
+  padding: 1rem 2rem;
 
-@keyframes moverBanner{
+}
+
+@keyframes mover{
   0%{
     transform: translateY(30rem)
   }
   100%{
     transform: scale(1rem);
+  }
+}
+@keyframes sumir{
+  0%{
+    transform: translateY(30rem);
+    opacity: 0;
+  }
+  100%{
+     opacity: 1;
   }
 }
 
