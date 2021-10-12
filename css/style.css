@@ -16,6 +16,12 @@ header{
     overflow: hidden;
     position: relative;
 }
+p{
+  line-height: 22px;
+}
+.box{
+  padding: 0% 6% 1% 6%;
+}
 .hamburguer span{
   position: absolute;
   left: 3rem;
@@ -91,7 +97,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 100s 
+    animation: zoom 30s 
 }
 @keyframes zoom{
   0%{
@@ -257,3 +263,221 @@ header{
   transition: 0.4s; */
   transform: translateY(-3%);
 }
+
+.conhecimentos {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+ .conhecimento{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+ }
+
+.sessao-conhecimentos {
+  background-color: #f5f5f5;
+  height: 100%;
+}
+
+.sessao-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sessao-header h1 {
+  font-family: "Baloo 2",serif;
+  font-size: 3rem;
+  color: #4b4b4b;
+  border-bottom: solid 3px #6a3093;
+  margin-bottom: 1.5rem;
+}
+
+.conhecimento-header {
+  display: flex;
+  align-items: center;
+  color: #4b4b4b;
+}
+
+.conhecimento-header i {
+  font-size: 2.5rem;
+}
+
+
+.conhecimento-header h3 {
+  font-family:"Josefin Sans",serif; ;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.conhecimento-text {
+  font-family: "Josefin Sans",serif;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.conhecimentos-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.img-conteudo{
+  width: 100%;
+  max-width: 400px;
+  
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.815);
+  font-size: 1.1rem;
+  
+}
+
+.card-info h2 {
+  font-family: "Baloo 2",serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color:  rgb(255, 255, 255);
+}
+
+.card-info h3 {
+  font-family:"Baloo 2",serif;
+  font-weight: bolder;
+  color: #ff4081;
+  margin-bottom: 1.5rem;
+}
+
+.card-info p {
+  font-family:"Baloo 2",serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);
+  font-family: "Baloo 2",serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #eee;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.card-info button {
+  width: 8rem;
+  height: 2.5rem;
+}
+.card-info button:hover{
+  transform:scale(1.04);
+  transition: 0.65s;
+  cursor: pointer;
+}
+
+.boxx{
+  display: flex;
+  
+}
+.boxz{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer{
+  background-color: #17181b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+footer p {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.footer-content{
+  width: 100%;
+  
+}
+
+.footer-content p{
+  
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+.social-list{
+  margin-bottom: 1.2rem;
+}
+.social-list a{
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+#link-topo{
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: .3rem;
+  box-shadow:  0 0.1rem 0.6rem #00000009;
+}
+ .boxf{
+   padding: 0 6% 0 6%;
+ }
+ .footer-content{
+   width: 70%;
+ }
